@@ -15,8 +15,8 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 
 **so here we go:**
 
-##Prerequisites:
-###Software
+## Prerequisites:
+### Software
 
 * **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
@@ -32,10 +32,10 @@ I use  **Python 2.7.13**, on the **Mac** be sure you use the FrameWork version, 
 * **numpy:**```$ pip install numpy```
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
 
-###Arduino Libraries:
+### Arduino Libraries:
 **Servo:** <https://www.arduino.cc/en/reference/servo>
 
-###Hardware
+### Hardware
 * **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. Mine comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits.
 
