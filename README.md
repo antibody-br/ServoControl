@@ -23,14 +23,14 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 * **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
 * **touchOSC editor:** <https://hexler.net/software/touchosc> scroll nearly too the end of the page: Downloads -> choose your OS.
 
-###Python Modules
+## Python Modules
 I use  **Python 2.7.13**, on the **Mac** be sure you use the FrameWork version, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
 * **OSC:** Unix terminal: ```$ pip install pyosc``` or download: <https://github.com/ptone/pyosc>
 * **Vpython:**```$ pip install vpython```
-* ***serial:***```$ pip install pyserial```
-* ***numpy:***```$ pip install numpy```
-* ***socket:*** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
+* **serial:**```$ pip install pyserial```
+* **numpy:**```$ pip install numpy```
+* **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
 
 ###Arduino Libraries:
 **Servo:** <https://www.arduino.cc/en/reference/servo>
