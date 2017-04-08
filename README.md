@@ -1,8 +1,9 @@
  
-![Blogo](image/LOGOs.png)
+
 
 # ServoControl
 ## Remote control using Python, Arduino, OSC and TouchOSC App with Smartphone (iPhone iOS or Android)
+![Blogo](image/screen.png)
 
 This program is based on the code and instructions from **SILVINO J. A. PRESA**: <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/> **<-THANK YOU!** very, very much, it helped a lot.
 
@@ -37,3 +38,7 @@ I use  **Python 2.7.13**, on the **Mac** be sure you use the FrameWork version, 
 ###Hardware
 * **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. Mine comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits.
+
+
+ 
+
