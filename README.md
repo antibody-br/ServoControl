@@ -6,7 +6,7 @@
 
 This program is based on the code and instructions from **SILVINO J. A. PRESA**: <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/> **<-THANK YOU!** very, very much, it helped a lot.
 
-I am not an experience Python programmer, so I wrote a mickey-mouse program to control a servo with my iPhone.
+I am not an experience Python programmer, so I wrote a mickey-mouse code to control a servo with my iPhone.
 There are for sure much clever way's to do this, so all feedback and improvements are very welcome.
 
  
