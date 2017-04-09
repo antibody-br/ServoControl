@@ -19,7 +19,7 @@ on Mac or PC:
 
 * **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
-* **touchOSC editor:** <https://hexler.net/software/touchosc> scroll nearly too the end of the page: Downloads -> choose your OS.  
+* **touchOSC editor:** <https://hexler.net/software/touchosc> scroll too the end of the page: Downloads -> choose your OS.  
  
 on Smartphone (iPhone or Android)  
 
