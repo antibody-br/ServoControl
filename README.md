@@ -1,16 +1,8 @@
-<style>
-#col {color: red}
 
-img[src$="center"] {
-  display:block;
-  margin: 0 auto;
-
-</style>
-
-![Blogo](image/LOGOs.png?style=center)
+![Blogo](image/LOGOs.png)
 # ServoControl
 ## Remote control using Python, Arduino, OSC and TouchOSC App with Smartphone (iPhone iOS or Android)
-![Blogo](image/screen.png?style=center)
+![Blogo](image/screen.png)
 
 This program is based on the code and instructions from **SILVINO J. A. PRESA**: <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/> **<-THANK YOU!** very, very much, it helped a lot.
 
@@ -20,7 +12,15 @@ There are for sure much clever way's to do this, so all feedback and improvement
  
 For instance I use an UDP server to get the controller path from the touchOSC app and then I start a OSC server to control it. There must be a smarter way to do this.
 
-**so here we go:**
+**so here we go:**  
+
+index:
+
+| code  | used by |device|
+| ------------- | ------------- |------------- |
+| OSC_servo.py  | python IDE  |computer  |
+| Servo.touchOSC  | touchOSC editor  |computer => phone touchOSC |
+| Servo_Control.ino  | Arduino IDE  |computer => Arduino |
 
 ### Prerequisites:
 ## Software
@@ -53,7 +53,7 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits.
 
 ## Circuit
-![Circuit](image/circuit.png?style=center)
+![Circuit](image/circuit.png)
 
 ## TouchOSC editor Computer
 
@@ -77,8 +77,8 @@ Now you can choose the ```Servo``` layout.
 Open the ```Servo_Control.ino```file and send it to the Arduino. Be sure that the right type Arduino and serial Port is choosen => ```Menubar -> Tools -> Board: / Port:```  
 Now you see also the name of the serialPort that you need to set in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is something like this, on WIN is somethins like ```COMn```  
   
-First compile your sketch, do not open the serial monitor, and the run ```OSC_Control.py```  
-Other wise you get the message: 
+First compile your sketch, do not open the serial monitor, and then run ```OSC_Control.py``` Other wise you get the message:  
+```avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy``` 
 
 ## OSC_Control.py
 change the variables acording to your eviroment:  
@@ -90,12 +90,10 @@ serverPort = 8000
 clientAdr = "192.168.0.102"
 clientPort = 9000
 ```
-<p style="color: red">
-WARNING: </p>if you not use a fix IP address, but get if from a DHCP server, the IP address can change, special on the Phone, that is reconecting to your network if you return from an other place.
+
+WARNING: if you not use a fix IP address, but get if from a DHCP server, the IP address can change, special on the Phone, that is reconecting to your network if you return from an other place.
 error message is e.g:  
-<p style="color: red">
 OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'
-</p>
 you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```192.168.0.103```  
   
 it take a few moments to start, also it a bit slow to receive the fist messages.  
@@ -116,3 +114,8 @@ Arduino Serial Port: /dev/tty.wchusbserialfa130
 controller => rotaryValue angleValue
 
 ```
+
+### Famous last words: "IT SHOULD WORK!"###
+###Happy trouble shooting and debugging!!!###
+#-=b=-#
+ bert@temminck.net, April 2017, Anápolis-GO, BRASIL
