@@ -1,3 +1,4 @@
+![Blogo](image/LOGOs.png)
 # ServoControl
 ## Remote control using Python, Arduino, OSC and TouchOSC App with Smartphone (iPhone iOS or Android)
 ![Blogo](image/screen.png)
@@ -12,29 +13,41 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 
 **so here we go:**
 
-## Prerequisites:
-### Software
+### Prerequisites:
+## Software
+on Mac or PC:  
 
 * **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
-* **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
-* **touchOSC editor:** <https://hexler.net/software/touchosc> scroll nearly too the end of the page: Downloads -> choose your OS.
+* **touchOSC editor:** <https://hexler.net/software/touchosc> scroll nearly too the end of the page: Downloads -> choose your OS.  
+ 
+on Smartphone (iPhone or Android)  
+
+* * **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
 
 ## Python Modules
 I use  **Python 2.7.13**, on the **Mac** be sure you use the FrameWork version, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
-* **OSC:** Unix terminal: ```$ pip install pyosc``` or download: <https://github.com/ptone/pyosc>
+* **OSC:** Unix terminal: ```$ pip install pyosc``` or download: <https://github.com/ptone/pyosc>  
+if you have trouble installing it, you can also put the ```OSC.py``` in the same folder you have ``OSC_Servo.py``
+
 * **Vpython:**```$ pip install vpython```
 * **serial:**```$ pip install pyserial```
 * **numpy:**```$ pip install numpy```
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
 
-### Arduino Libraries:
+## Arduino Libraries
 **Servo:** <https://www.arduino.cc/en/reference/servo>
 
-### Hardware
+## Hardware
 * **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. Mine comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits.
+
+## Circuit
+![Circuit](image/circuit.png)
+
+
+
 
 
  
