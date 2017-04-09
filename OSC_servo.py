@@ -1,5 +1,5 @@
 
-# This program is based on the code and instructions from **SILVINO J. A. PRESA:
+# This program is based on the code and instructions from SILVINO J. A. PRESA:
 # <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/
 
 # modified by -=b=- apr-2017: bert@temminck.net
