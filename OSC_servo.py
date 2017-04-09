@@ -52,7 +52,7 @@ def servo_call(path, tags, args, source):                         # read incommi
     servo_msg = chr(pos)                                        # convert integer -> ascii = chr(num)
     print "%s => %.2f  %s" % (path, inData, str(pos))           # other way around:  ascii -> integer = ord(num)
     myLabel = 'angle: ' + str(pos)                              # update the text label for the virtual environment
-    data.write(servo_msg)                                       #send the angle to the Arduino through serial port
+    data.write(servo_msg)                                       # send the angle to the Arduino through serial port
     angleLabel.text = myLabel                                   # refresh label on virtual environment
     #  calculate the new axis of the indicator
     measuringArrow.axis = (-10 * np.cos(pos * 0.01745), 10 * np.sin(pos * 0.01745), 0)
@@ -86,11 +86,11 @@ clientAdr = "192.168.0.103"                                     # ip address of 
 clientPort = 9000                                               # port number of touchOSC on your phone
 data = serial.Serial(serialPort, 9600, timeout=1)               # data send to Arduino via serial port (UBS connetion)
 ''' 
-WARNING: if you not use a fix ip address, but get if from a DHCP server, the ip address can change
+WARNING: if you not use a fix IP address, but get if from a DHCP server, the IP address can change
 special on the Phone, that is reconecting to your network if you return from an other place.
 error message is: 
 OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'
-you see: if have my Phone ip defined as "192.168.0.102" but it is now: "192.168.0.103'
+you see: if have my Phone <clientAdr> defined as "192.168.0.102" but it is now: "192.168.0.103'
 '''
 
 print >> sys.stderr, '\nArduino Serial Port: %s ' % serialPort
