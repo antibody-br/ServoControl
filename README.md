@@ -30,7 +30,6 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 ### 5)  load ```OSC_Control.py``` in python IDE, and run it.
 ### 6) Now you can control the servo with your Phone
 
-
 # Requirements:
 ## Software
 on Mac or PC:  
@@ -50,8 +49,6 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 * **serial:**```$ pip install pyserial```
 * **numpy:**```$ pip install numpy```
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
-
-
 
 ## Hardware
 * **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. $15, My UNO comes from China (Oops!)
@@ -84,13 +81,11 @@ Now you can choose the ```Servo``` layout.
 
 see also <https://hexler.net/docs/touchosc-configuration-layout-transfer-wifi>
 
-
 ## Arduino IDE
 In the Arduino IDE on your computer: open the ```Servo_Control.ino```file and send it to the Arduino. Be sure that the right type Arduino and serial Port is selected => ```Menubar -> Tools -> Board: / Port:```  
 Now you see also the name of the **serialPort that you need to set** in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is similar like this, on WIN is some thing like ```COMn```  
 see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
 
-  
 First compile your sketch, do not open the serial monitor, and then run ```OSC_Control.py``` Other wise you get the message: 
 **avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy**
 
@@ -117,15 +112,10 @@ error message is e.g:
 you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```192.168.0.103```   
 Check again your touchOSC app to see if it is still the same.
   
-it take a few moments to start, on my compter 20 sec., also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
-output looks like this:
+it take a few moments to start, on my compter 20 sec., also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it. Output looks like this:
 
 ![Circuit](image/python_con.png)  
 conroller => output angle
-
-
-
-
 
 ## Famous last words: "IT SHOULD WORK!" 
 ### Happy trouble shooting and debugging!!! 
