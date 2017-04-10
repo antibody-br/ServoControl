@@ -69,7 +69,7 @@ Double click the ```Servo.touchosc``` file, and the ```TouchOSC editor``` should
 
 ## ToucOSC app on Phone
 * click the white spot on upper right of the window, choose the upper item  
-* ```OSC:``` and fill in the ```IP address```, variable in the ```OSC_Control.py``` =>```serverAdr = "192.168.0.104"``` <= ** YOU HAVE TO CHANGE this to your computer ```IP address```!!!** 
+* ```OSC:``` and fill in the ```IP address```, variable in the ```OSC_Control.py``` =>```serverAdr = "192.168.0.104"``` <= * ** YOU HAVE TO CHANGE this to your computer ```IP address```!!!** 
 * ```Port(outgoing)``` is set to ```8000```, variable in the ```OSC_Control.py``` =>```serverPort = 8000```
 * ```Port(incoming)``` is set to ```9000```, variable in the ```OSC_Control.py``` =>```clientPort = 9000```
 * ```Local IP address``` is variable in  ```OSC_Control.py``` =>```clientAdr = "192.168.0.102"```<= **ofcource you have to change this to your Phone  ```IP address```!!!** 
