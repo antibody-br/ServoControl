@@ -26,7 +26,7 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 ## Steps:
 
 ### 1) Set up Arduino Circuit
-### 2) Computer: load ```Servo.touchosc``` layout in ```TouchOSC editor```###
+### 2) Computer: load ```Servo.touchosc``` layout in ```TouchOSC editor```
 ### 3) synchronize layout with Phone ```TouchOSC``` app.
 ### 4) load ```Servo_Control.ino``` sketch in ```Arduino IDE``` and compile to Arduino device
 ### 5)  load ```OSC_Control.py``` in python IDE, and run it.
