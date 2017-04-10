@@ -65,7 +65,7 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 
 
 
-## TouchOSC editor Computer
+## TouchOSC editor on Computer
 
 Double click the ```Servo.touchosc``` file, and the ```TouchOSC editor``` should open or open it from inside the editor.  
  Click the ```Sync``` button, in the upper right of the window => <https://hexler.net/docs/touchosc-editor-sync>
