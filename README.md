@@ -1,7 +1,7 @@
 
 ![Blogo](image/LOGOs.png)
 # ServoControl
-## Remote servo control using Python, Arduino, OSC and TouchOSC App with Smartphone (iPhone iOS or Android)
+## Remote servo control using Python, Arduino, OSC and TouchOSC App with Smartphone (iPhone iOS/macOS or Android/Windows)
 ![Blogo](image/header.png)
 
 This program is based on the code and instructions from **SILVINO J. A. PRESA**: <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/> **<-THANK YOU!** and adapted by me for remote control with the touchOSC app.  
