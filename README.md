@@ -98,11 +98,12 @@ Now you see also the name of the **serialPort that you need to set** in ```OSC_C
 see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
 
   
-First compile your sketch, do not open the serial monitor, and then run ```OSC_Control.py``` Other wise you get the message:  
-** avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy
+First compile your sketch, do not open the serial monitor, and then run ```OSC_Control.py``` Other wise you get the message: 
+**avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy**
+
 
 ## OSC_Control.py
-** !!! change the variables according to your enviroment  !!! **  to find your IP address:  
+### !!! change the variables according to your enviroment  !!! ### to find your IP address:  
 Mac: <http://osxdaily.com/2010/11/21/find-ip-address-mac/>   
 WIN: <https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address> 
  
