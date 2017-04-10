@@ -7,15 +7,15 @@
 This program is based on the code and instructions from **SILVINO J. A. PRESA**: <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/> **<-THANK YOU!** and adapted by me for remote control with the touchOSC app.  
 
 I am not an experience Python programmer, so I wrote a mickey-mouse code to control a servo with my iPhone.
-There are for sure much clever way's to do this, so all feedback and improvements are very welcome.
+There are for sure much clever way's to do this, so feedback and improvements are very welcome.
 
-For instance I use an UDP server to get the controller path from the touchOSC app and then I start a OSC server to control it. There must be a smarter way to do this.
+For instance I use an UDP server to get the controller path from the touchOSC app and then I start an OSC server to control it. There must be a smarter way to do this.
 
 **so here we go:**  
 
 **index:**
 
-| code  | used by |device|
+| code  | program |device|
 | ------------- | ------------- |------------- |
 | OSC_servo.py  | python IDE  |computer  |
 | Servo.touchOSC  | touchOSC editor  |computer => phone touchOSC |
@@ -37,8 +37,7 @@ on Mac or PC:
 
 * **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
-* **touchOSC editor:** <https://hexler.net/software/touchosc> **=> scroll to the end of the page: Downloads -> choose your OS.** 
-on Smartphone (iPhone or Android)  
+* **touchOSC editor:** <https://hexler.net/software/touchosc> **=> scroll to the end of the page: Downloads -> choose your OS.**  
 *  **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
 
 ## Python Modules
@@ -52,8 +51,6 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 * **numpy:**```$ pip install numpy```
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
 
-## Arduino Libraries
-**Servo:** <https://www.arduino.cc/en/reference/servo> => how to install: <https://www.arduino.cc/en/guide/libraries>
 
 
 ## Hardware
@@ -114,9 +111,10 @@ clientPort = 9000
 **WARNING:** if you not use a fix IP address, but get if from a DHCP server, the IP address can change, special on the Phone, that is re-conecting to your network if you return from an other place.
 error message is e.g:  
 <sup><small>OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'</small></sup>  
-you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```192.168.0.103```  
+you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```192.168.0.103```   
+Check again your touchOSC app to see if it is still the same.
   
-it take a few moments to start, also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
+it take a few moments to start, on my compter 20 sec., also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
 output looks like this:
 
 ![Circuit](image/python_con.png)  
