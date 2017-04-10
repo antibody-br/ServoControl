@@ -39,7 +39,7 @@ on Mac or PC:
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
 * **touchOSC editor:** <https://hexler.net/software/touchosc> **=> scroll to the end of the page: Downloads -> choose your OS.** 
 on Smartphone (iPhone or Android)  
-* * **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
+*  **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
 
 ## Python Modules
 I use  **Python 2.7.13**, on the **Mac** be sure you use the **FrameWork version**, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
