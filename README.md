@@ -114,7 +114,7 @@ Check again your touchOSC app to see if it is still the same.
   
 it take a few moments to start, on my compter 20 sec., also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it. Output looks like this:
 
-![Circuit](image/python_con.png)  
+![Circuit](image/python_con.png)  
 conroller => output angle
 
 ## Famous last words: "IT SHOULD WORK!" 
