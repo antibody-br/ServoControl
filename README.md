@@ -116,14 +116,15 @@ clientPort = 9000
 
 **WARNING:** if you not use a fix IP address, but get if from a DHCP server, the IP address can change, special on the Phone, that is re-conecting to your network if you return from an other place.
 error message is e.g:  
-**OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'**  
+<sup><small>OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'</small></sup>  
 you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```192.168.0.103```  
   
 it take a few moments to start, also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
 output looks like this:
 
-![Circuit](image/python_con.png)  
-```conroller => output angle```
+![Circuit](image/python_con.png)  
+conroller => output angle
+
 
 
 
