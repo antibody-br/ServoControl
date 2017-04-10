@@ -2,7 +2,7 @@
 ![Blogo](image/LOGOs.png)
 # ServoControl
 ## Remote servo control using Python, Arduino, OSC and TouchOSC App with Smartphone (iPhone iOS or Android)
-![Blogo](image/screen.png)
+![Blogo](image/header.png)
 
 This program is based on the code and instructions from **SILVINO J. A. PRESA**: <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/> **<-THANK YOU!** very, very much, it helped a lot.
 
@@ -37,7 +37,7 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 ## Software
 on Mac or PC:  
 
-* **Python IDE:** I prefer PyCharm: <https://www.jetbrains.com/pycharm/> 
+* **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
 * **touchOSC editor:** <https://hexler.net/software/touchosc> **=> scroll to the end of the page: Downloads -> choose your OS.** 
 
@@ -62,17 +62,8 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 
 
 ## Hardware
-* **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. Around $15, My UNO comes from China (Oops!)  
+* **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. Around 15$, My UNO comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits. Around $5
-  
-**WARNING:** the serial/UBS port on the **chinese clone Arduino UNO** will not work unless you download a CH340 driver. Carefull downloading it from a Chinese site, my CH340 driver crashed my MAC badly (unsigned driver -> kernel panic), had to reinstall the system   
-<https://tzapu.com/ch340-ch341-serial-adapters-macos-sierra/>  
-Here are english links that look better =>  
-MAC: <https://blog.sengotta.net/signed-mac-os-driver-for-winchiphead-ch340-serial-bridge/>  
-WIN: <http://www.arduined.eu/ch340-windows-8-driver-download/>  
-
-
-
 
 ## Circuit diagram
 ![Circuit](image/circuit.png)
@@ -86,21 +77,16 @@ Double click the ```Servo.touchosc``` file, and the ```TouchOSC editor``` should
 
 ## ToucOSC app on Phone
 * click the white spot on upper right of the window, choose the upper item  
-* ```OSC:``` and fill in the ```IP address```, variable in the ```OSC_Control.py``` =>```serverAdr = "192.168.0.104"```   
-**YOU HAVE TO CHANGE this to your computer IP address!!!**  
-Mac: <http://osxdaily.com/2010/11/21/find-ip-address-mac/>   
-WIN: <https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address> 
-
+* ```OSC:``` and fill in the ```IP address```, variable in the ```OSC_Control.py``` =>```serverAdr = "192.168.0.104"``` <= ** YOU HAVE TO CHANGE this to your computer ```IP address```!!!** 
 * ```Port(outgoing)``` is set to ```8000```, variable in the ```OSC_Control.py``` =>```serverPort = 8000```
 * ```Port(incoming)``` is set to ```9000```, variable in the ```OSC_Control.py``` =>```clientPort = 9000```
-* ```Local IP address``` is a variable in  ```OSC_Control.py``` =>```clientAdr = "192.168.0.103"```<= **of cource you have to change this to your Phone  ```IP address```!!!** 
+* ```Local IP address``` is variable in  ```OSC_Control.py``` =>```clientAdr = "192.168.0.102"```<= **ofcource you have to change this to your Phone  ```IP address```!!!** 
 Bellow the settings on my iPhone:
 
 ![Circuit](image/touchNet.png)  
 
 Return to ```<TouchOSC``` upper left corner and choose the item under ```LAYOUT```, choose ```Add```   
-Choose the host from the list. The ```touchOSC Editor``` must be in synchronize mode on your computer.  
-
+Choose the host from the list. 
 Now you can choose the ```Servo``` layout.  
 
 see also <https://hexler.net/docs/touchosc-configuration-layout-transfer-wifi>
@@ -108,14 +94,12 @@ see also <https://hexler.net/docs/touchosc-configuration-layout-transfer-wifi>
 
 ## Arduino IDE
 In the Arduino IDE on your computer: open the ```Servo_Control.ino```file and send it to the Arduino. Be sure that the right type Arduino and serial Port is selected => ```Menubar -> Tools -> Board: / Port:```  
-Now you see also the name of the **serialPort that you need to set** in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is similar like this, on WIN is some thing like ```COMn```    
+Now you see also the name of the **serialPort that you need to set** in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is similar like this, on WIN is some thing like ```COMn```  
 see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
 
   
-**First compile your sketch**, do not open the serial monitor, **and then run** ```OSC_Control.py``` Other wise you get the message:  
-```avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy```  
-   
-In some cases you may need to install the FTDI driver => <https://learn.adafruit.com/ftdi-friend/overview>
+First compile your sketch, do not open the serial monitor, and then run ```OSC_Control.py``` Other wise you get the message:  
+```avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy``` 
 
 ## OSC_Control.py
 **!!! change the variables according to your enviroment  !!!**  to find your IP address:  
@@ -131,7 +115,7 @@ clientPort = 9000
 ```
 
 **WARNING:** if you not use a fix IP address, but get if from a DHCP server, the IP address can change, special on the Phone, that is re-conecting to your network if you return from an other place.
-error message is:  
+error message is e.g:  
 **OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'**  
 you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```192.168.0.103```  
   
