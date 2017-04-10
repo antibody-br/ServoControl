@@ -99,10 +99,10 @@ see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
 
   
 First compile your sketch, do not open the serial monitor, and then run ```OSC_Control.py``` Other wise you get the message:  
-```avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy``` 
+** avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy
 
 ## OSC_Control.py
-**!!! change the variables according to your enviroment  !!!**  to find your IP address:  
+** !!! change the variables according to your enviroment  !!! **  to find your IP address:  
 Mac: <http://osxdaily.com/2010/11/21/find-ip-address-mac/>   
 WIN: <https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address> 
  
@@ -121,10 +121,10 @@ you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```19
   
 it take a few moments to start, also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
 output looks like this:
-```
 
-```
-Arduino Serial Port: /dev/tty.wchusbserialfa130 
+
+
+```Arduino Serial Port: /dev/tty.wchusbserialfa130 
     Computer server: 192.168.0.104  port: 8000
        Phone client: 192.168.0.103  port: 9000
 
@@ -136,7 +136,6 @@ Arduino Serial Port: /dev/tty.wchusbserialfa130
 /1/push5 => 1.00  180
 
 controller => rotaryValue angleValue 
-
 ```
 
 
