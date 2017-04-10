@@ -9,13 +9,11 @@ This program is based on the code and instructions from **SILVINO J. A. PRESA**:
 I am not an experience Python programmer, so I wrote a mickey-mouse code to control a servo with my iPhone.
 There are for sure much clever way's to do this, so all feedback and improvements are very welcome.
 
- 
 For instance I use an UDP server to get the controller path from the touchOSC app and then I start a OSC server to control it. There must be a smarter way to do this.
 
 **so here we go:**  
 
 **index:**
-
 
 | code  | used by |device|
 | ------------- | ------------- |------------- |
@@ -40,10 +38,7 @@ on Mac or PC:
 * **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
 * **Arduino IDE:** <https://www.arduino.cc/en/main/software>
 * **touchOSC editor:** <https://hexler.net/software/touchosc> **=> scroll to the end of the page: Downloads -> choose your OS.** 
-
- 
 on Smartphone (iPhone or Android)  
-
 * * **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
 
 ## Python Modules
@@ -62,7 +57,7 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 
 
 ## Hardware
-* **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. Around 15$, My UNO comes from China (Oops!)
+* **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. $15, My UNO comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits. Around $5
 
 ## Circuit diagram
