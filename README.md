@@ -121,6 +121,7 @@ you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```19
   
 it take a few moments to start, also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
 output looks like this:
+```
 
 ```
 Arduino Serial Port: /dev/tty.wchusbserialfa130 
@@ -134,11 +135,13 @@ Arduino Serial Port: /dev/tty.wchusbserialfa130
 /1/rotary1 => 0.29  52
 /1/push5 => 1.00  180
 
-controller => rotaryValue angleValue ```
+controller => rotaryValue angleValue 
+
+```
 
 
 
-## Famous last words: "IT SHOULD WORK!" ##
-### Happy trouble shooting and debugging!!! ###
-# -=b=- #
+## Famous last words: "IT SHOULD WORK!" 
+### Happy trouble shooting and debugging!!! 
+# -=b=-
  bert@temminck.net, April 2017, Anápolis-GO, BRASIL
