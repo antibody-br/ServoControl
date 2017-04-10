@@ -103,7 +103,8 @@ First compile your sketch, do not open the serial monitor, and then run ```OSC_C
 
 
 ## OSC_Control.py
-### !!! change the variables according to your enviroment  !!! ### to find your IP address:  
+### !!! change the variables according to your enviroment  !!! ### 
+to find your IP address:  
 Mac: <http://osxdaily.com/2010/11/21/find-ip-address-mac/>   
 WIN: <https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address> 
  
