@@ -122,21 +122,9 @@ you see: if have my Phone IP defined as ```192.168.0.102``` but it is now: ```19
 it take a few moments to start, also its a bit slow to receive the fist messages. Keep turning the rotary till it gets it.  
 output looks like this:
 
+![Circuit](image/python_con.png)  
+```conroller => output angle```
 
-
-```Arduino Serial Port: /dev/tty.wchusbserialfa130 
-    Computer server: 192.168.0.104  port: 8000
-       Phone client: 192.168.0.103  port: 9000
-
- waiting for Phone...
-/1/rotary1 => 0.54  97
-/1/push3 => 0.50  90
-/1/rotary1 => 0.48  86
-/1/rotary1 => 0.29  52
-/1/push5 => 1.00  180
-
-controller => rotaryValue angleValue 
-```
 
 
 
