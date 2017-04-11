@@ -86,7 +86,7 @@ In the Arduino IDE on your computer: open the ```Servo_Control.ino```file and se
 Now you see also the name of the **serialPort that you need to set** in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is similar like this, on WIN is some thing like ```COMn```  
 see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
 
-**First** compile your sketch, do not open the serial monitor, **and then run** ```OSC_Control.py``` Other wise you get the message: 
+**First** compile your sketch, **do not** open the serial monitor, **and then run** ```OSC_Control.py``` Other wise you get the message: 
 **avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy**
 
 
