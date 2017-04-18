@@ -63,7 +63,7 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 ## TouchOSC editor on Computer
 
 Double click the ```Servo.touchosc``` file, and the ```TouchOSC editor``` should open or open it from inside the editor.  
- Click the ```Sync``` button, in the upper right of the window => <https://hexler.net/docs/touchosc-editor-sync>
+ Click the ```Sync``` button, in the upper right of the window => [touchOSC sync](https://hexler.net/docs/touchosc-editor-sync)
 
 ## ToucOSC app on Phone
 * click the white spot on upper right of the window, choose the upper item  
@@ -87,7 +87,7 @@ see also [touchOSC wifi transfer](https://hexler.net/docs/touchosc-configuration
 ## Arduino IDE
 In the Arduino IDE on your computer: open the ```Servo_Control.ino```file and send it to the Arduino. Be sure that the right type Arduino and serial Port is selected => ```Menubar -> Tools -> Board: / Port:```  
 Now you see also the name of the **serialPort that you need to set** in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is similar like this, on WIN is some thing like ```COMn```  
-see also:[serial port name](https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name)
+see also: [serial port name](https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name)
 
 **First** compile your sketch, **do not** open the serial monitor, **and then run** ```OSC_Control.py``` Other wise you get the message: 
 **avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy**
@@ -96,7 +96,7 @@ see also:[serial port name](https://learn.adafruit.com/ftdi-friend/com-slash-ser
 ## OSC_Control.py
  
 to find your IP address: [Mac](http://osxdaily.com/2010/11/21/find-ip-address-mac/) or [Win](https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address)  
-<mark> !!! change the variables according to your enviroment  !!! </mark>
+**!!! change the variables according to your enviroment  !!! **
 
  
 ```
