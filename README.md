@@ -35,13 +35,13 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 ## Software
 on Mac or PC:  
 
-* **Python editor:** I prefer PyCharm (mac/win): <https://www.jetbrains.com/pycharm/> 
-* **Arduino IDE:** <https://www.arduino.cc/en/main/software>
-* **touchOSC editor:** <https://hexler.net/software/touchosc> **=> scroll to the end of the page: Downloads -> choose your OS.**  
-*  **touchOSC app:** iOS: <https://hexler.net/software/touchosc> android: <https://hexler.net/software/touchosc-android>  price: $5
+* **Python editor:** I prefer [PyCharm](https://www.jetbrains.com/pycharm/) (mac/win) 
+* **[Arduino IDE](https://www.arduino.cc/en/main/software)**
+* [**touchOSC editor**](https://hexler.net/software/touchosc) **=> scroll to the end of the page: Downloads -> choose your OS.**  
+*  **touchOSC app:** [iOS](https://hexler.net/software/touchosc) or [android](https://hexler.net/software/touchosc-android)  price: $5
 
 ## Python Modules
-I use  **Python 2.7.13**, on the **Mac** be sure you use the **FrameWork version**, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
+I use  [**Python 2.7.13**](https://python.org), on the **Mac** be sure you use the **FrameWork version**, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
 * **OSC:** Unix terminal: ```$ pip install pyosc``` or download: <https://github.com/ptone/pyosc>  
 if you have trouble installing it, you can also put the ```OSC.py``` that is in the downloaded package, in the same folder you have ```OSC_Servo.py```
