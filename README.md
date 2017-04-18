@@ -46,7 +46,7 @@ I use  [**Python 2.7.13**](https://python.org). On the **Mac** be sure you use t
 * [**OSC:**](https://github.com/ptone/pyosc) Unix terminal: ```$ pip install pyosc``` or download: 
 if you have trouble installing it, you can also put the ```OSC.py``` that is in the downloaded package, in the same folder you have ```OSC_Servo.py```
 
-* **Vpython:**```$ pip install vpython```
+* [**Vpython:**](http://vpython.org)```$ pip install vpython```
 * **serial:**```$ pip install pyserial```
 * **numpy:**```$ pip install numpy```
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
