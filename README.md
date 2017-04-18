@@ -96,7 +96,7 @@ see also: [serial port name](https://learn.adafruit.com/ftdi-friend/com-slash-se
 ## OSC_Control.py
  
 to find your IP address: [Mac](http://osxdaily.com/2010/11/21/find-ip-address-mac/) or [Win](https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address)  
-**CHANGE THE VARIABLEN according to your enviroment**
+**!!!CHANGE THESE VARIABLEN according to your enviroment!!!**
 
  
 ```
