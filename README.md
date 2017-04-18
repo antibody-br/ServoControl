@@ -118,7 +118,7 @@ it take a few moments to start, on my compter 20 sec., also its a bit slow to re
 ![Circuit](image/python_con.png)  
 conroller => output angle
 
-## Famous last words: "IT SHOULD WORK!" 
+## Famous last words: <"IT SHOULD WORK!"> 
 ### Happy trouble shooting and debugging!!! 
 # -=b=-
  <bert@temminck.net>, April 2017, Anápolis-GO, BRASIL
