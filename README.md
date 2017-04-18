@@ -31,7 +31,7 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 > ### 5)  load ```OSC_Control.py``` in python IDE, and run it.
 > ### 6) Now you can control the servo with your Phone
 
-## Requirements:
+### Requirements:
 ## Software
 on Mac or PC:  
 
