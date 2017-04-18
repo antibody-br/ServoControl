@@ -43,7 +43,7 @@ on Mac or PC:
 ## Python Modules
 I use  [**Python 2.7.13**](https://python.org), on the **Mac** be sure you use the **FrameWork version**, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
-* **OSC:** Unix terminal: ```$ pip install pyosc``` or download: <https://github.com/ptone/pyosc>  
+* [**OSC:**](https://github.com/ptone/pyosc) Unix terminal: ```$ pip install pyosc``` or download: 
 if you have trouble installing it, you can also put the ```OSC.py``` that is in the downloaded package, in the same folder you have ```OSC_Servo.py```
 
 * **Vpython:**```$ pip install vpython```
@@ -52,7 +52,7 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
 
 ## Hardware
-* **Arduino Board (Uno):** <https://www.arduino.cc/> and many other companies. $15, My UNO comes from China (Oops!)
+* [**Arduino Board (Uno)**](https://www.arduino.cc) and many other companies. $15, My UNO comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits. Around $5
 
 ## Circuit diagram
@@ -82,12 +82,12 @@ Return to ```<TouchOSC``` upper left corner and choose the item under ```LAYOUT`
 Choose the host from the list. 
 Now you can choose the ```Servo``` layout.  
 
-see also <https://hexler.net/docs/touchosc-configuration-layout-transfer-wifi>
+see also [touchOSC wifi transfer](https://hexler.net/docs/touchosc-configuration-layout-transfer-wifi)
 
 ## Arduino IDE
 In the Arduino IDE on your computer: open the ```Servo_Control.ino```file and send it to the Arduino. Be sure that the right type Arduino and serial Port is selected => ```Menubar -> Tools -> Board: / Port:```  
 Now you see also the name of the **serialPort that you need to set** in ```OSC_Control.py``` => variable: ```serialPort = "/dev/tty.wchusbserialfa130"```. On the Mac it is similar like this, on WIN is some thing like ```COMn```  
-see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
+see also:[serial port name](https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name)
 
 **First** compile your sketch, **do not** open the serial monitor, **and then run** ```OSC_Control.py``` Other wise you get the message: 
 **avrdude: ser_open(): can't open device "/dev/cu.wchusbserialfa130": Resource busy**
@@ -95,10 +95,8 @@ see also: <https://learn.adafruit.com/ftdi-friend/com-slash-serial-port-name>
 
 ## OSC_Control.py
  
-to find your IP address:  
-Mac: <http://osxdaily.com/2010/11/21/find-ip-address-mac/>   
-WIN: <https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address>  
-### !!! change the variables according to your enviroment  !!! ###
+to find your IP address: [Mac](http://osxdaily.com/2010/11/21/find-ip-address-mac/) or [Win](https://support.microsoft.com/en-us/help/15291/windows-find-pc-ip-address)  
+<mark> !!! change the variables according to your enviroment  !!! </mark>
 
  
 ```
