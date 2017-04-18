@@ -41,7 +41,7 @@ on Mac or PC:
 *  **touchOSC app:** [iOS](https://hexler.net/software/touchosc) or [android](https://hexler.net/software/touchosc-android)  price: $5
 
 ## Python Modules
-I use  [**Python 2.7.13**](https://python.org), on the **Mac** be sure you use the **FrameWork version**, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
+I use  [**Python 2.7.13**](https://python.org). On the **Mac** be sure you use the **FrameWork version**, otherwise the Vpython graphic display will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
 * [**OSC:**](https://github.com/ptone/pyosc) Unix terminal: ```$ pip install pyosc``` or download: 
 if you have trouble installing it, you can also put the ```OSC.py``` that is in the downloaded package, in the same folder you have ```OSC_Servo.py```
