@@ -1,4 +1,5 @@
-
+# use Python 2.7, otherwise Vpython will not work
+# on the Mac you have to use the framework version of Python to get the Vpython graphic display
 # This program is based on the code and instructions from **SILVINO J. A. PRESA:
 # <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/
 
@@ -7,7 +8,7 @@
 import OSC                                 
 from   OSC import OSCServer, OSCClient
 import serial
-from   visual import *
+from   visual import *                                            # is in the Vpython module
 import numpy as np
 import sys
 import socket
