@@ -2,8 +2,9 @@
 # on the Mac you have to use the framework version of Python to get the Vpython graphic display
 # This program is based on the code and instructions from **SILVINO J. A. PRESA:
 # <http://www.silvinopresa.com/how-to/python/control-a-servo-with-arduino-and-python-vpython/
+# and adapted by me to remote control the servo with the touchOSC app on a smartphone 
 
-# modified by -=b=- apr-2017: bert@temminck.net
+#  -=b=- apr-2017: bert@temminck.net
 
 import OSC                                 
 from   OSC import OSCServer, OSCClient
