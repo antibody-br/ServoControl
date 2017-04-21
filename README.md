@@ -72,7 +72,7 @@ Double click the ```Servo.touchosc``` file, and the ```TouchOSC editor``` should
 **YOU HAVE TO CHANGE this to your computer ```IP address```!!!** 
 * ```Port(outgoing)``` is set to ```8000```, variable in the ```OSC_Control.py``` =>```serverPort = 8000```
 * ```Port(incoming)``` is set to ```9000```, variable in the ```OSC_Control.py``` =>```clientPort = 9000```
-* ```Local IP address``` is variable in  ```OSC_Control.py``` =>```clientAdr = "192.168.0.102"```<=  
+* ```Local IP address``` is variable in  ```OSC_Control.py``` =>```clientAdr = "192.168.0.103"```<=  
 **YOU HAVE TO CHANGE this to your Phone ```IP address```!!!**  
 
 Bellow the settings on my iPhone:
