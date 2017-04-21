@@ -6,9 +6,9 @@
 
 #  -=b=- apr-2017: bert@temminck.net
 
-import OSC                                 
+import OSC                                                        # pyosc                                
 from   OSC import OSCServer, OSCClient
-import serial
+import serial                                                     # pyserial
 from   visual import *                                            # is in the Vpython module
 import numpy as np
 import sys
