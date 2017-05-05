@@ -35,7 +35,7 @@ For instance I use an UDP server to get the controller path from the touchOSC ap
 ## Software
 on Mac or PC:  
 
-* **Python editor:** I prefer [PyCharm](https://www.jetbrains.com/pycharm/) (mac/win) 
+* **Python IDE:** I prefer [PyCharm](https://www.jetbrains.com/pycharm/) (mac/win) 
 * **[Arduino IDE](https://www.arduino.cc/en/main/software)**
 * [**touchOSC editor**](https://hexler.net/software/touchosc) **=> scroll to the end of the page: Downloads -> choose your OS.**  
 *  **touchOSC app:** [iOS](https://hexler.net/software/touchosc) or [android](https://hexler.net/software/touchosc-android)  price: $5
