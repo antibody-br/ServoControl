@@ -42,7 +42,7 @@ on Mac or PC:
 
 ## Python Modules
 > Be sure that you use  [**Python 2.7**](https://python.org), otherwise ```Vpython``` will not work.  
-> On the **Mac** be sure you use the **FrameWork version**, otherwise the ```Vpython graphic display``` will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
+> On the **Mac** use the **FrameWork version**, otherwise the ```Vpython graphic display``` will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
 * [**OSC:**](https://github.com/ptone/pyosc) Unix terminal: ```$ pip install pyosc``` or download: 
 if you have trouble installing it, you can also put the ```OSC.py``` that is in the downloaded package, in the same folder you have ```OSC_Servo.py```
