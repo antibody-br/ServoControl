@@ -53,7 +53,7 @@ if you have trouble installing it, you can also put the ```OSC.py``` that is in 
 * **socket:** I guess it is a standard Python package, but had a lot of trouble getting it working. Be sure you have no other socket.py some where in your directories.
 
 ## Hardware
-* [**Arduino Board (Uno)**](https://www.arduino.cc) and many other companies. $15, My UNO comes from China (Oops!)
+* [**Arduino Board (Uno)**](https://www.arduino.cc) available from many suppliers. $15, My UNO comes from China (Oops!)
 * **Servo Motor:** I use TowerPro SG90, do a google search and you get a lot of hits. Around $5
 
 ## Circuit diagram
