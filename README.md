@@ -41,7 +41,7 @@ on Mac or PC:
 *  **touchOSC app:** [iOS](https://hexler.net/software/touchosc) or [android](https://hexler.net/software/touchosc-android)  price: $5
 
 ## Python Modules
-> Be sure that you use  [**Python 2.7**](https://python.org), otherwise ```Vpython``` will not work.  
+> Run the program with  [**Python 2.7**](https://python.org), otherwise ```Vpython``` will not work.  
 > On the **Mac** use the **FrameWork version**, otherwise the ```Vpython graphic display``` will not work: ```/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7```
 
 * [**OSC:**](https://github.com/ptone/pyosc) Unix terminal: ```$ pip install pyosc``` or download: 
