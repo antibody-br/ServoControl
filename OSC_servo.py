@@ -98,7 +98,7 @@ you see: if have my Phone ip defined as "192.168.0.102" but it is now: "192.168.
 '''
 sys.stdout.write(GREEN)
 print '\nArduino Serial Port: %s ' % serialPort
-print '    Computer server: %s  port: %s' % (serverAdr, serverPort)
+print '    Computer server: %s   port: %s' % (serverAdr, serverPort)
 print '       Phone client: %s  port: %s' % (clientAdr, clientPort)
 sys.stdout.write(RED)
 print '\n waiting for Phone TouchOSC App...\n'
