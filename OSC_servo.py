@@ -96,6 +96,9 @@ error message is:
 OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'
 you see: if have my Phone ip defined as "192.168.0.102" but it is now: "192.168.0.103'
 '''
+sys.stdout.write(BLUE)
+sys.stdout.write(REV)
+print '\n SERVO CONTROL'
 sys.stdout.write(GREEN)
 print '\nArduino Serial Port: %s ' % serialPort
 print '    Computer server: %s   port: %s' % (serverAdr, serverPort)
