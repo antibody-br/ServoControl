@@ -78,13 +78,15 @@ push2 = "/1/push2"
 push3 = "/1/push3"
 push4 = "/1/push4"
 push5 = "/1/push5"
+# terminal color definitions
+RED="\033[1;31m";BLUE="\033[1;34m";CYAN="\033[1;36m";GREEN="\033[0;32m";RESET="\033[0;0m";BOLD="\033[;1m";REV="\033[;7m"
 
 # serialPort on the Mac it is something like this, on WIN is something like: COMn
 # in the Arduino IDE on your computer you can see the serial port name in the menubar -> Tools -> port
 serialPort = '/dev/tty.wchusbserialfa130'
-serverAdr = "192.168.0.104"                                     # ip address of your computer
+serverAdr = "192.168.0.11"                                     # ip address of your computer
 serverPort = 8000                                               # port number used on your computer
-clientAdr = "192.168.0.103"                                     # ip address of your phone, find it on touchOSC
+clientAdr = "192.168.0.102"                                     # ip address of your phone, find it on touchOSC
 clientPort = 9000                                               # port number of touchOSC on your phone
 data = serial.Serial(serialPort, 9600, timeout=1)               # data send to Arduino via serial port (UBS connetion)
 ''' 
@@ -94,12 +96,13 @@ error message is:
 OSCServer: NoCallbackError on request from 192.168.0.103:64550: No callback registered to handle OSC-address '/1/push2'
 you see: if have my Phone ip defined as "192.168.0.102" but it is now: "192.168.0.103'
 '''
-
-print >> sys.stderr, '\nArduino Serial Port: %s ' % serialPort
-print >> sys.stderr, '    Computer server: %s  port: %s' % (serverAdr, serverPort)
-print >> sys.stderr, '       Phone client: %s  port: %s' % (clientAdr, clientPort)
-print >> sys.stderr, '\n waiting for Phone...'
-
+sys.stdout.write(GREEN)
+print '\nArduino Serial Port: %s ' % serialPort
+print '    Computer server: %s  port: %s' % (serverAdr, serverPort)
+print '       Phone client: %s  port: %s' % (clientAdr, clientPort)
+sys.stdout.write(RED)
+print '\n waiting for Phone TouchOSC App...\n'
+sys.stdout.write(RESET)
 # Create virtual environment -------------------------------------------------------------------------------------------
 # first we create the arrow to show current position of the servo
 measuringArrow = arrow(pos=(0, -10, 0), axis=(0, 10, 0), shaftwidth=0.4, headwidth=0.6)
